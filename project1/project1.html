@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
   <title>국립 중앙 박물관</title>
 </head>
 <body>
@@ -740,7 +743,24 @@
   <section class="intro-wrap">
     <div class="intro-container">
       <h2 class="hidden">국립 중앙 박물관 전시 정보</h2>
-      <div class="main-slider"></div>
+      
+      <div class="main-slider">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <button class="swiper-button-pause">stop</button>
+        </div>
+      </div>
+
       <div class="main-info">
         <div class="mus-info-area">
           <div class="info-time">
@@ -790,5 +810,33 @@
       </div>
     </footer>
   </div>
+
+  <script>
+    window.onload = function(){
+
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var pause = document.querySelector('.swiper-button-pause');
+      pause.addEventListener('click',()=>{
+        swiper.autoplay.stop();
+        pause.innerText = 'start'
+      });
+    };
+  </script>
 </body>
 </html>
