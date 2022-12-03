@@ -38,20 +38,21 @@ body{
 .diaryTitle span{
   font-weight:600;
 }
-.myNotion{
-  position:relative;
+.myLinkWrap{
   width:60%;
   margin: 0 auto 50px;
 }
-.myNotionLink{
+.myLink{
+  position:relative;
   font-size:28px;
   font-weight:800;
+  margin-right: 50px;
 }
-.myNotionLink span{
+.myLink span{
   font-size:16px;
   font-weight:300;
 }
-.myNotion:after{
+.myLink1:after{
   content:'_';
   position:absolute;
   left:0;
@@ -60,6 +61,17 @@ body{
   font-family: 'Fredericka the Great', cursive;
   font-size:140px;
   z-index: -999;
+}
+.myLink2:after{
+  content:'__';
+  position:absolute;
+  left:0;
+  bottom:-45px;
+  opacity:0.9;
+  font-family: 'Fredericka the Great', cursive;
+  font-size:140px;
+  z-index: -999;
+  letter-spacing: -5px;
 }
 
 .hwWrap{
