@@ -124,3 +124,51 @@ body{
 .hwList > li > a:hover::after{
   width:100%;
 }
+
+
+
+.typeMarking{
+  width: 95%;
+  margin:0 auto;
+  font-size:28px;
+  font-weight:800;
+  padding:10px 0;
+  border-bottom:solid 10px #0F4CAA;
+}
+.dateBox{
+  width: 95%;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:28px;
+  font-weight:800;
+  padding:10px 0;
+  border-bottom:solid 5px #0F4CAA;
+}
+.workList{
+  padding:10px;
+}
+.workList > li{
+  margin-bottom:12px;
+}
+.workList > li:last-child{
+  margin-bottom:0;
+}
+.workList > li > a{
+  position:relative;
+  font-weight:300;
+}
+.workList > li > a:after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:-2px;
+  width:0%;
+  height:1px;
+  background:#0F4CAA;
+  transition:all .4s;
+}
+.workList > li > a:hover::after{
+  width:100%;
+}
