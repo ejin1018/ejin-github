@@ -15,6 +15,7 @@ a, a:link, a:visited{
 .sitemap-wrap, 
 .footer-wrap{
   width: 100%;
+  background: #ccc;
 }
 header,
 .intro-container,
@@ -24,7 +25,18 @@ header,
 .footer-container{
   max-width: 1440px;
   margin: 0 auto 0;
+  background: #ddd;
 }
+
+/* .hidden{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+} */
 
 .skip-menu-btn{
   position: absolute;
@@ -156,6 +168,9 @@ header,
           font-weight: 500;
           text-align: center;
         }
+        .gnb-top-btn:hover{
+          color: #5B4F7C;
+        }
 
   .gnb-mid-inner{
     position: absolute;
@@ -164,6 +179,7 @@ header,
     display: inline-block;
     width: 100%;
     background: #222;
+    z-index: 99;
   }
     .gnb-mid-list{
       display: none;
@@ -175,6 +191,9 @@ header,
       display: block;
       clear: both;
     }
+    .gnb-mid-on{
+      display: block;
+    }
       .gnb-mid-list > li{
         float: left;
       }
@@ -185,12 +204,19 @@ header,
           color: #fff;
           margin-right: 15px;
         }
+        .gnb-mid-list .gnb-mid-btn:hover{
+          color: #FADA4E;
+        }
 
     .gnb-bot-list{
       display: none;
       position: absolute;
       padding: 20px 20px;
       background: #444;
+      z-index: 99;
+    }
+    .gnb-bot-on{
+      display: block;
     }
       .gnb-bot-list > li{
         margin-bottom: 5px;
@@ -199,6 +225,9 @@ header,
           font-size: 14px;
           color: #fff;
         }
+        .gnb-bot-list .gnb-bot-btn:hover{
+          color: #FADA4E;
+        }
 
   .sign-container{
     width: 15%;
@@ -206,5 +235,8 @@ header,
   }
 
   .intro-container{
-    margin-top: 60px;
+    padding-top: 60px;
   }
+    .main-exhibition-img{
+      width: 100%;
+    }

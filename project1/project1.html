@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" >
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="js/proj1.js"></script>
 
   <title>국립 중앙 박물관</title>
 </head>
@@ -745,19 +746,28 @@
       <h2 class="hidden">국립 중앙 박물관 전시 정보</h2>
       
       <div class="main-slider">
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
+        <div class="swiper mySwiper main-exhibition">
+          <div class="swiper-wrapper main-exhibition-inner">
+            <div class="swiper-slide main-exhibition-item">
+              <img class="main-exhibition-img" src="img/exhibit00.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="main-exhibition-img" src="img/exhibit01.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="main-exhibition-img" src="img/exhibit02.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="main-exhibition-img" src="img/exhibit03.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="main-exhibition-img" src="img/exhibit04.jpeg" alt="">
+            </div>
           </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <button class="swiper-button-pause">stop</button>
+          <div class="swiper-pagination main-pagination"></div>
+          <div class="swiper-button-next main-next-btn"></div>
+          <div class="swiper-button-prev main-preb-btn"></div>
+          <button class="main-stop-btn">stop</button>
         </div>
       </div>
 
@@ -814,24 +824,24 @@
   <script>
     window.onload = function(){
 
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".main-exhibition", {
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-          delay: 1500,
+          delay: 2500,
           disableOnInteraction: false,
         },
         pagination: {
-          el: ".swiper-pagination",
+          el: ".main-pagination",
           clickable: true,
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".main-next-btn",
+          prevEl: ".main-preb-btn",
         },
       });
 
-      var pause = document.querySelector('.swiper-button-pause');
+      var pause = document.querySelector('.main-stop-btn');
       pause.addEventListener('click',()=>{
         swiper.autoplay.stop();
         pause.innerText = 'start'
