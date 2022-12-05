@@ -126,40 +126,49 @@ body{
 }
 
 
-
+.workWrap{
+  width:90%;
+  margin:0 auto 50px;
+  overflow: hidden;
+}
+.workContainer{
+  float: left;
+  width: 32%;
+  padding: 10px;
+  margin-right: 2%;
+  border:solid 1px #0F4CAA;
+}
+.workContainer:last-child{
+  margin-right:0;
+}
 .typeMarking{
-  width: 95%;
+  width: 100%;
   margin:0 auto;
   font-size:28px;
   font-weight:800;
   padding:10px 0;
-  border-bottom:solid 10px #0F4CAA;
+  border-bottom:solid 6px #0F4CAA;
 }
 .dateBox{
-  width: 95%;
-  margin:0 auto;
+  width: 100%;
+  margin-bottom:12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size:28px;
+  font-size:26px;
   font-weight:800;
   padding:10px 0;
-  border-bottom:solid 5px #0F4CAA;
-}
-.workList{
-  padding:10px;
+  border-bottom:solid 3px #0F4CAA;
 }
 .workList > li{
+  position:relative;
   margin-bottom:12px;
 }
-.workList > li:last-child{
-  margin-bottom:0;
-}
 .workList > li > a{
-  position:relative;
+  font-size: 16px;
   font-weight:300;
 }
-.workList > li > a:after{
+.workList > li:after{
   content:'';
   position:absolute;
   left:0;
@@ -169,6 +178,6 @@ body{
   background:#0F4CAA;
   transition:all .4s;
 }
-.workList > li > a:hover::after{
+.workList > li:hover::after{
   width:100%;
 }
