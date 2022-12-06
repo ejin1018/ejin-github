@@ -79,7 +79,7 @@ footer{
     .utility-btn{
       position: relative;
       display: block;
-      padding: 8px 5px;
+      padding: 8px 8px;
       font-size: 14px;
       font-weight: 300;
       color: #222;
@@ -115,12 +115,12 @@ footer{
 
       .sns-list{
         display: inline-block;
-        padding: 0 10px;
+        padding: 0 15px;
       }
       .sns-list li{
         float: left;
-        margin-top: 8px;
-        margin-right: 15px;
+        margin-top: 10px;
+        margin-right: 19px;
       }
       .sns-list li:last-child{
         margin-right: 0;
@@ -147,26 +147,24 @@ footer{
       }
   .gnb-inner{
     width: 65%;
-    margin: 0 2%;
+    margin: 1.4% 0 0 6%;
     float: left;
   }
     .gnb-top-list{
-      width: 100%;
       display: inline-block;
+      width: 100%;
     }
       .gnb-top-list > li{
-        width: 13%;
         float: left;
+        margin-right: 4%;
       }
       .gnb-top-list > li:last-child{
         margin-right: 0;
       }
         .gnb-top-btn{
           display: block;
-          padding: 10px 0;
           font-size: 21px;
           font-weight: 500;
-          text-align: center;
         }
         .gnb-top-btn:hover{
           color: #5B4F7C;
@@ -230,9 +228,23 @@ footer{
         }
 
   .sign-container{
-    width: 15%;
-    float: left;
+    float: right;
+    margin-top: 1%;
   }
+  .sign-container > a{
+    display: inline-block;
+    margin-left: 10px;
+  }
+  .sign-container > a:first-child{
+    margin-left:0;
+  }
+    .sign-btn{
+      font-size: 15px;
+      font-weight: 400;
+    }
+      .search-btn img{
+        width: 100%;
+      }
 
   .intro-container{
     padding-top: 60px;
