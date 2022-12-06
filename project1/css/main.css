@@ -4,9 +4,6 @@
 body{
   font-family: 'Noto Sans KR', sans-serif;
 }
-a, a:link, a:visited{
-  color: #222;
-}
 
 .header-wrap, 
 .intro-wrap, 
@@ -85,7 +82,7 @@ footer{
       color: #222;
       text-align: center;
     }
-    .utility-btn:hover{
+    .utility-btn-on{
       background: #222;
       color: #fff;
     }
@@ -103,6 +100,10 @@ footer{
       position: absolute;
       width: 100%;
     }
+    .util-sub-on{
+      display: block;
+      z-index: 99;
+    }
       .util-sub-btn{
         display: block;
         padding: 8px 5px;
@@ -111,6 +112,10 @@ footer{
         background: #222;
         color: #fff;
         text-align: center;
+      }
+      .util-sub-btn:hover{
+        color: #FADA4E;
+        text-decoration: underline;
       }
 
       .sns-list{
@@ -134,7 +139,7 @@ footer{
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     margin-top: 30px;
   }
   .logo{
@@ -150,7 +155,7 @@ footer{
     width: 65%;
   }
     .gnb-top-list{
-      width: 100%;
+      width: 78%;
       display:flex;
       justify-content: space-between;
       align-items: center;
@@ -162,6 +167,7 @@ footer{
           display: block;
           font-size: 21px;
           font-weight: 500;
+          color: #222;
         }
         .gnb-top-btn:hover{
           color: #5B4F7C;
@@ -169,7 +175,7 @@ footer{
 
   .gnb-mid-inner{
     position: absolute;
-    top: 70px;
+    top: 78px;
     left: 0;
     display: inline-block;
     width: 100%;
@@ -223,17 +229,19 @@ footer{
         .gnb-bot-list .gnb-bot-btn:hover{
           color: #FADA4E;
         }
-
+  .sign-container{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
   .sign-container > a{
     display: inline-block;
-    margin-left: 10px;
-  }
-  .sign-container > a:first-child{
-    margin-left:0;
   }
     .sign-btn{
       font-size: 15px;
       font-weight: 400;
+      color: #222;
     }
       .search-btn img{
         width: 100%;
@@ -245,3 +253,68 @@ footer{
     .main-exhibition-img{
       width: 100%;
     }
+
+  .main-info{
+    width: 99%;
+    margin: 0 auto;
+  }
+  .main-info:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+    .mus-info-area{
+      float: left;
+      width: 78%;
+      margin-right: 2%;
+      border-bottom: 3px solid #222;
+    }
+      .info-time{
+        margin-bottom: 20px;
+      }
+        .info-title{
+          display: inline-block;
+          margin-right: 30px;
+          font-size: 24px;
+          font-weight: 700;
+        }
+          .info-title span{
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background: cadetblue;
+            margin-right: 20px;
+          }
+        .info-text-box{
+          display: inline-block;
+        }
+          .info-text-box > p{
+            display: inline-block;
+          }
+          .info-sub-title{
+            margin-right: 20px;
+            font-size: 18px;
+            font-weight: 700;
+          }
+          .info-text{
+            font-size: 18px;
+            font-weight: 300;
+          }
+      .info-fee{
+        margin-bottom: 30px;
+      }
+    .mus-btn-area{
+      float: left;
+      width: 20%;
+      background: aliceblue;
+    }
+      .main-btn-go{
+        display: block;
+        float: left;
+        width: 50%;
+        font-size: 28px;
+        font-weight: 700;
+        color: #5B4F7C;
+        text-align: center;
+        background: wheat;
+      }

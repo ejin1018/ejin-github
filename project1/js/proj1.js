@@ -1,5 +1,44 @@
 window.addEventListener('DOMContentLoaded',()=>{
   console.log('ready');
+
+  let utilBtns = document.querySelectorAll('.utility-btn');
+  let utilSubs = document.querySelectorAll('.util-sub-list');
+
+  utilBtns.forEach((utilBtn,index)=>{
+    utilBtn.addEventListener('click',()=>{
+
+      utilSubs.forEach((utilSub)=>{
+        utilSub.classList.remove('util-sub-on');
+      });
+
+      if(index == 3){
+        utilBtn.classList.add('utility-btn-on');
+        utilSubs[0].classList.add('util-sub-on');
+      }else if(index == 4){
+        utilBtn.classList.add('utility-btn-on');
+        utilSubs[1].classList.add('util-sub-on');
+      }
+    });
+    utilBtn.addEventListener('mouseleave',()=>{
+      utilBtn.classList.remove('utility-btn-on');
+    });
+  });
+  
+  utilSubs.forEach((utilSub,index)=>{
+    utilSub.addEventListener('mouseenter',()=>{
+      if(index == 0){
+        utilBtns[3].classList.add('utility-btn-on');
+      }else if(index == 1){
+        utilBtns[4].classList.add('utility-btn-on');
+      }
+    });
+    utilSub.addEventListener('mouseleave',()=>{
+      utilBtns.forEach((utilBtn)=>{
+        utilBtn.classList.remove('utility-btn-on');
+      });
+      utilSub.classList.remove('util-sub-on');
+    })
+  });
   
   let topBtns = document.querySelectorAll('.gnb-top-btn');
   let midMenu = document.querySelectorAll('.gnb-mid-list');
