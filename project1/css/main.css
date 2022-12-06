@@ -130,14 +130,15 @@ footer{
       }
       
   .gnb-container{
-    position: relative;
     width: 100%;
-    display: inline-block;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     margin-top: 30px;
   }
   .logo{
     width: 14.5%;
-    float: left;
   }
     .logo-btn{
       display: block;
@@ -147,17 +148,13 @@ footer{
       }
   .gnb-inner{
     width: 65%;
-    margin: 1.4% 0 0 6%;
-    float: left;
   }
     .gnb-top-list{
-      display: inline-block;
       width: 100%;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
     }
-      .gnb-top-list > li{
-        float: left;
-        margin-right: 4%;
-      }
       .gnb-top-list > li:last-child{
         margin-right: 0;
       }
@@ -227,10 +224,6 @@ footer{
           color: #FADA4E;
         }
 
-  .sign-container{
-    float: right;
-    margin-top: 1%;
-  }
   .sign-container > a{
     display: inline-block;
     margin-left: 10px;
