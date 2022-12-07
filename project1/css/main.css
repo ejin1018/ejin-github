@@ -293,6 +293,14 @@ footer{
             background: cadetblue;
             margin-right: 20px;
           }
+          .info-time-title span{
+            background: url(../img/icon-clock.png) no-repeat;
+            background-size: contain;
+          }
+          .info-fee-title span{
+            background: url(../img/icon-ticket.png) no-repeat;
+            background-size: contain;
+          }
         .info-text-box{
           display: inline-block;
         }
@@ -314,7 +322,6 @@ footer{
     .mus-btn-area{
       float: left;
       width: 20%;
-      background: aliceblue;
     }
       .main-btn-go{
         position:relative;
