@@ -7,18 +7,15 @@ body{
 
 [class*='-wrap']{
   width: 100%;
-  background: #ccc;
 }
 
-header,
-.intro-container,
-.exhib-container,
-.notice-container,
-.sitemap-container,
-footer{
+header,footer,[class*='-container']{
   max-width: 1440px;
   margin: 0 auto 0;
-  background: #ddd;
+}
+
+.exhib-wrap, .notice-wrap, .sitemap-wrap{
+  margin-top: 100px;
 }
 
 .hidden{
@@ -29,6 +26,13 @@ footer{
   height: 1px;
   font-size: 0;
   line-height: 0;
+}
+.section-title{
+  margin-bottom: 30px;
+}
+.section-title a{
+  font-size: 45px;
+  color: #222;
 }
 
 .skip-menu-btn{
@@ -50,7 +54,7 @@ footer{
   color: #fff;
   background: #222;
 }
-
+/*header*/
   .utility-wrap{
     width: 100%;
     margin-top: 15px;
@@ -90,7 +94,7 @@ footer{
         display: inline-block;
         width: 8px;
         height: 8px;
-        margin: 0 0 3px 5px;
+        margin: 0 0 3px 10px;
         border-bottom: solid 1px #222;
         border-left: solid 1px #222;
         transform: rotate(-45deg);
@@ -101,7 +105,7 @@ footer{
         border-left: solid 1px #fff;
       }
       .utility-btn-on .arrow-down{
-        margin: 0 0  -1px 5px;
+        margin: 0 0  -1px 10px;
         border-bottom: solid 1px #fff;
         border-left: solid 1px #fff;
         transform: rotate(135deg);
@@ -153,20 +157,19 @@ footer{
     align-items: center;
     margin-top: 30px;
   }
-  .logo{
-    width: 14.5%;
-  }
-    .logo-btn{
-      display: block;
+    .logo{
+      width: 14.5%;
     }
-      .logo-btn img{
-        width: 100%;
+      .logo-btn{
+        display: block;
       }
+        .logo-btn img{
+          width: 100%;
+        }
   .gnb-inner{
     width: 65%;
   }
     .gnb-top-list{
-      width: 78%;
       display:flex;
       justify-content: space-between;
       align-items: center;
@@ -184,41 +187,41 @@ footer{
           color: #5B4F7C;
         }
 
-  .gnb-mid-inner{
-    position: absolute;
-    top: 78px;
-    left: 0;
-    display: inline-block;
-    width: 100%;
-    background: #222;
-    z-index: 99;
-  }
-    .gnb-mid-list{
-      display: none;
-      width: 70%;
-      margin: 0 auto;
+    .gnb-mid-inner{
+      position: absolute;
+      top: 78px;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+      background: #222;
+      z-index: 99;
     }
-    .gnb-mid-list:after{
-      content: '';
-      display: block;
-      clear: both;
-    }
-    .gnb-mid-on{
-      display: block;
-    }
-      .gnb-mid-list > li{
-        float: left;
+      .gnb-mid-list{
+        display: none;
+        width: 70%;
+        margin: 0 auto;
       }
-        .gnb-mid-list .gnb-mid-btn{
-          position: relative;
-          display: block;
-          padding: 10px 0;
-          color: #fff;
-          margin-right: 15px;
+      .gnb-mid-list:after{
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .gnb-mid-on{
+        display: block;
+      }
+        .gnb-mid-list > li{
+          float: left;
         }
-        .gnb-mid-list .gnb-mid-btn:hover{
-          color: #FADA4E;
-        }
+          .gnb-mid-list .gnb-mid-btn{
+            position: relative;
+            display: block;
+            padding: 10px 0;
+            color: #fff;
+            margin-right: 15px;
+          }
+          .gnb-mid-list .gnb-mid-btn:hover{
+            color: #FADA4E;
+          }
 
     .gnb-bot-list{
       display: none;
@@ -240,16 +243,16 @@ footer{
         .gnb-bot-list .gnb-bot-btn:hover{
           color: #FADA4E;
         }
-  .sign-container{
+  .sign-inner{
     width: 10%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .sign-container > a{
-    display: inline-block;
-  }
-    .sign-btn{
+    .sign-inner > a{
+      display: inline-block;
+    }
+      .sign-btn{
       font-size: 15px;
       font-weight: 400;
       color: #222;
@@ -258,6 +261,7 @@ footer{
         width: 100%;
       }
 
+/*intro*/
   .intro-container{
     padding-top: 60px;
   }
@@ -332,7 +336,8 @@ footer{
         display: block;
         float: left;
         width: 45%;
-        padding: 30px 0;
+        height: 123px;
+        line-height: 123px;
         font-size: 28px;
         font-weight: 700;
         color: #5B4F7C;
@@ -357,4 +362,22 @@ footer{
       }
       .main-btn-go:hover::after{
         height: 100%;
+      }
+
+/*exhibition*/
+  .nationExh-container{
+    background: aliceblue;
+  }
+    .nationExh-inner{
+      background: lavender;
+    }
+      .nationExh-list{
+        background: wheat;
+        overflow: hidden;    
+      }
+      .nationExh-list li{
+        background: lavenderblush;
+        width: 23%;
+        margin-right: 2.6%;
+        float: left;
       }
