@@ -68,4 +68,32 @@ window.addEventListener('DOMContentLoaded',()=>{
       }
     });
   });
+
+  //exhibition slide
+  let ExhUl = document.querySelector('.nationExh-list');
+  let ExhLi = document.querySelectorAll('.nationExh-list li');
+  let nowIndex = 0;
+  let liLength = ExhLi.length;
+  let prev = document.querySelector('.nExh-prev');
+  let next = document.querySelector('.nExh-next');
+  let liWidth = 315;
+  let liMargin = 60;
+
+  ExhUl.style.width = (liWidth + liMargin) * liLength + 'px' ;
+
+  function ExhMove(num){
+    ExhUl.style.left = - num * (liWidth + liMargin) + 'px';
+    nowIndex = num;
+  }
+
+  prev.addEventListener('click',()=>{
+    if(nowIndex !== 0){
+      ExhMove(nowIndex - 1);
+    }
+  });
+  next.addEventListener('click',()=>{
+    if(nowIndex !== liLength - 1){
+      ExhMove(nowIndex + 1);
+    }
+  });
 })

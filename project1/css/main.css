@@ -14,7 +14,7 @@ header,footer,[class*='-container']{
   margin: 0 auto 0;
 }
 
-.exhib-wrap, .notice-wrap, .sitemap-wrap{
+.nationExh-wrap, .notice-wrap, .sitemap-wrap{
   margin-top: 100px;
 }
 
@@ -366,18 +366,110 @@ header,footer,[class*='-container']{
 
 /*exhibition*/
   .nationExh-container{
+    position: relative;
     background: aliceblue;
   }
     .nationExh-inner{
+      position: relative;
+      height: 611px;
+      overflow: hidden;
       background: lavender;
     }
       .nationExh-list{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2190px;
         background: wheat;
-        overflow: hidden;    
+        overflow: hidden;
+        transition: left .4s;
       }
-      .nationExh-list li{
-        background: lavenderblush;
-        width: 23%;
-        margin-right: 2.6%;
-        float: left;
+        .nationExh-list li{
+          background: lavenderblush;
+          width: 315px;
+          margin-right: 60px;
+          float: left;
+        }
+        .nationExh-list li:last-child{
+          margin-right: 0;
+        }
+          .nation-poster{
+            display: block;
+          }
+            .nation-poster img{
+              display: block;
+              width: 100%;
+            }
+          .nation-tag{
+            margin-top: 30px;
+          }
+            .nation-tag span{
+              display: inline-block;
+              line-height: 30px;
+              font-size: 16px;
+              font-weight: 300;
+              padding: 0 12px;
+              box-sizing: border-box;
+            }
+            .nation-tag-when{
+              background: #222;
+              color: #fff;
+            }
+            .nation-tag-theme{
+              border: 1px solid #222;
+            }
+          .nation-title{
+            display: block;
+            margin-top: 15px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #222;
+          }
+          .nation-period{
+            margin-top: 15px;
+            font-weight: 300;
+            color: #8e8e8e;
+          }
+
+      .nationExh-control{
+        width: 5%;
+        position: absolute;
+        right: 5px;
+        top: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
+        .nationExh-control button{
+          padding: 0;
+          cursor: pointer;
+        }
+        .nExh-prev{
+          width: 15px;
+          height: 15px;
+          border-top: 2px solid transparent;
+          border-left: 2px solid #222;
+          border-bottom: 2px solid #222;
+          border-right: 2px solid transparent;
+          transform: rotate(45deg);
+          background: transparent;
+        }
+        .nExh-play{
+          width: 10px;
+          height: 18px;
+          border: none;
+          background: url(../img/pause-btn.png) no-repeat;
+          background-color: transparent;
+          background-size: contain;
+          background-position: center;
+        }
+        .nExh-next{
+          width: 15px;
+          height: 15px;
+          border-top: 2px solid transparent;
+          border-left: 2px solid transparent;
+          border-bottom: 2px solid #222;
+          border-right: 2px solid #222;
+          transform: rotate(-45deg);
+          background: transparent;
+        }
