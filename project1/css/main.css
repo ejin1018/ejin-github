@@ -473,3 +473,37 @@ header,footer,[class*='-container']{
           transform: rotate(-45deg);
           background: transparent;
         }
+
+/*notice*/
+  .notice-title span{
+    display: inline-block;
+    width: 47px;
+    height: 42px;
+    margin-bottom: -6px;
+    background: url(../img/notice-icon.png) no-repeat;
+    background-size: contain;
+  }
+  .notice-inner{
+    width: 100%;
+    background: wheat;
+  }
+    .notice-inner-top{
+      width: 100%;
+      display: inline-block;
+      background: aliceblue;
+    }
+      .not-top-left{
+        float: left;
+        width: 50%;
+        margin-right: 5%;
+        background: lavender;
+      }
+      .not-top-right{
+        float: left;
+        width: 45%;
+        background: lavenderblush;
+      }
+    .notice-inner-bot{
+      width: 100%;
+      background: pink;
+    }
