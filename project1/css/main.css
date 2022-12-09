@@ -86,10 +86,10 @@ header,footer,[class*='-container']{
       background: #222;
       color: #fff;
     }
-    .utility-btn-on{
+    /* .utility-btn-on{
       background: #222;
       color: #fff;
-    }
+    } */
       .arrow-down{
         display: inline-block;
         width: 8px;
@@ -104,12 +104,12 @@ header,footer,[class*='-container']{
         border-bottom: solid 1px #fff;
         border-left: solid 1px #fff;
       }
-      .utility-btn-on .arrow-down{
+      /* .utility-btn-on .arrow-down{
         margin: 0 0  -1px 10px;
         border-bottom: solid 1px #fff;
         border-left: solid 1px #fff;
         transform: rotate(135deg);
-      }
+      } */
     .util-sub-list{
       display: none;
       position: absolute;

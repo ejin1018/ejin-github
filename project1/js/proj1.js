@@ -31,7 +31,6 @@ window.addEventListener('DOMContentLoaded',()=>{
     });
 
     utilMuseum.addEventListener('mouseleave',()=>{
-      console.log('out');
       utilBtn.style.background = '#fff';
       utilBtn.style.color = '#222';
       utilArrow[0].style.margin = '0 0  3px 10px';
@@ -42,7 +41,6 @@ window.addEventListener('DOMContentLoaded',()=>{
       utilSubs[0].style.display = 'none';
     });
     utilLang.addEventListener('mouseleave',()=>{
-      console.log('out');
       utilBtn.style.background = '#fff';
       utilBtn.style.color = '#222';
       utilArrow[1].style.margin = '0 0  3px 10px';
