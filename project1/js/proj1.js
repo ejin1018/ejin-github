@@ -69,6 +69,11 @@ window.addEventListener('DOMContentLoaded',()=>{
       }
     });
   });
+  midMenu.forEach((midmenu)=>{
+    midmenu.addEventListener('mouseleave',()=>{
+      midmenu.classList.remove('gnb-mid-on');
+    });
+  });
   midBtns.forEach((midBtn)=>{
     midBtn.addEventListener('mouseenter',()=>{
       botMenu.forEach((botmenu)=>{
