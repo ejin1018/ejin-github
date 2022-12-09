@@ -2,42 +2,56 @@ window.addEventListener('DOMContentLoaded',()=>{
   console.log('ready');
 
   let utilBtns = document.querySelectorAll('.utility-btn');
+  let utilArrow = document.querySelectorAll('.arrow-down');
   let utilSubs = document.querySelectorAll('.util-sub-list');
+  let utilMuseum = document.querySelector('.util-museum');
+  let utilLang = document.querySelector('.util-lang');
 
   utilBtns.forEach((utilBtn,index)=>{
     utilBtn.addEventListener('click',()=>{
-
-      utilSubs.forEach((utilSub)=>{
-        utilSub.classList.remove('util-sub-on');
-      });
-
       if(index == 3){
-        utilBtn.classList.add('utility-btn-on');
-        utilSubs[0].classList.add('util-sub-on');
+        utilBtn.style.background = '#222';
+        utilBtn.style.color = '#fff';
+        utilArrow[0].style.margin = '0 0  -1px 10px';
+        utilArrow[0].style.borderBottomColor = '#fff';
+        utilArrow[0].style.borderLeftColor = '#fff';
+        utilArrow[0].style.transform = 'rotate(135deg)';
+
+        utilSubs[0].style.display = 'block';
       }else if(index == 4){
-        utilBtn.classList.add('utility-btn-on');
-        utilSubs[1].classList.add('util-sub-on');
+        utilBtn.style.background = '#222';
+        utilBtn.style.color = '#fff';
+        utilArrow[1].style.margin = '0 0  -1px 10px';
+        utilArrow[1].style.borderBottomColor = '#fff';
+        utilArrow[1].style.borderLeftColor = '#fff';
+        utilArrow[1].style.transform = 'rotate(135deg)';
+
+        utilSubs[1].style.display = 'block';
       }
     });
-    utilBtn.addEventListener('mouseleave',()=>{
-      utilBtn.classList.remove('utility-btn-on');
-    });
-  });
+
+    utilMuseum.addEventListener('mouseleave',()=>{
+      console.log('out');
+      utilBtn.style.background = '#fff';
+      utilBtn.style.color = '#222';
+      utilArrow[0].style.margin = '0 0  3px 10px';
+      utilArrow[0].style.borderBottomColor = '#222';
+      utilArrow[0].style.borderLeftColor = '#222';
+      utilArrow[0].style.transform = 'rotate(-45deg)';
   
-  utilSubs.forEach((utilSub,index)=>{
-    utilSub.addEventListener('mouseenter',()=>{
-      if(index == 0){
-        utilBtns[3].classList.add('utility-btn-on');
-      }else if(index == 1){
-        utilBtns[4].classList.add('utility-btn-on');
-      }
+      utilSubs[0].style.display = 'none';
     });
-    utilSub.addEventListener('mouseleave',()=>{
-      utilBtns.forEach((utilBtn)=>{
-        utilBtn.classList.remove('utility-btn-on');
-      });
-      utilSub.classList.remove('util-sub-on');
-    })
+    utilLang.addEventListener('mouseleave',()=>{
+      console.log('out');
+      utilBtn.style.background = '#fff';
+      utilBtn.style.color = '#222';
+      utilArrow[1].style.margin = '0 0  3px 10px';
+      utilArrow[1].style.borderBottomColor = '#222';
+      utilArrow[1].style.borderLeftColor = '#222';
+      utilArrow[1].style.transform = 'rotate(-45deg)';
+  
+      utilSubs[1].style.display = 'none';
+    });
   });
   
   let topBtns = document.querySelectorAll('.gnb-top-btn');
