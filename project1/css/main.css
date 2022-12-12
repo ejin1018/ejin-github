@@ -499,17 +499,37 @@ header,footer,[class*='-container']{
           .notice-board-title{
             width: 100%;
             display: inline-block;
-            background: lavenderblush;
+            border-bottom: 1px solid #8e8e8e;
           }
             .not-tab-radio{
               width: 80%;
-              background: lavender;
               float: left;
             }
+              .not-tab-radio input{
+                display: none;
+              }
+              .not-tab-radio label{
+                display: block;
+                float: left;
+                width: 25%;
+                padding: 15px 0;
+                font-size: 18px;
+                text-align: center;
+                cursor: pointer;
+                color: #8e8e8e;
+                box-sizing: border-box;
+              }
+              .not-tab-radio input:checked + label{
+                color: #222;
+                font-weight: 700;
+                border-bottom: 4px solid #222;
+              }
+
             .not-tab-plus{
               width: 28px;
               height: 28px;
               padding: 0;
+              margin-top: 15px;
               float: right;
               border: solid 1px #000;
               font-size: 25px;
