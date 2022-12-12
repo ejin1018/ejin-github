@@ -502,14 +502,19 @@ header,footer,[class*='-container']{
             background: lavenderblush;
           }
             .not-tab-radio{
-              width: 90%;
+              width: 80%;
               background: lavender;
               float: left;
             }
             .not-tab-plus{
-              width: 10%;
-              background: lavenderblush;
+              width: 28px;
+              height: 28px;
+              padding: 0;
               float: right;
+              border: solid 1px #000;
+              font-size: 25px;
+              line-height: 28px;
+              background: transparent;
             }
       .not-top-right{
         float: left;
