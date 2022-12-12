@@ -31,8 +31,8 @@ window.addEventListener('DOMContentLoaded',()=>{
     });
 
     utilMuseum.addEventListener('mouseleave',()=>{
-      utilBtn.style.background = '#fff';
-      utilBtn.style.color = '#222';
+      utilBtns[3].style.background = '#fff';
+      utilBtns[3].style.color = '#222';
       utilArrow[0].style.margin = '0 0  3px 10px';
       utilArrow[0].style.borderBottomColor = '#222';
       utilArrow[0].style.borderLeftColor = '#222';
@@ -41,8 +41,8 @@ window.addEventListener('DOMContentLoaded',()=>{
       utilSubs[0].style.display = 'none';
     });
     utilLang.addEventListener('mouseleave',()=>{
-      utilBtn.style.background = '#fff';
-      utilBtn.style.color = '#222';
+      utilBtns[4].style.background = '#fff';
+      utilBtns[4].style.color = '#222';
       utilArrow[1].style.margin = '0 0  3px 10px';
       utilArrow[1].style.borderBottomColor = '#222';
       utilArrow[1].style.borderLeftColor = '#222';
