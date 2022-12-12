@@ -487,8 +487,8 @@ header,footer,[class*='-container']{
     }
       .not-top-left{
         float: left;
-        width: 50%;
-        margin-right: 5%;
+        width: 48%;
+        margin-right: 4%;
       }
           .notice-board-title{
             width: 100%;
@@ -568,21 +568,34 @@ header,footer,[class*='-container']{
                   width: 20%;
                   font-weight: 300;
                   color: #8e8e8e;
-                  text-align: center;
+                  text-align: right;
                 }
 
       .not-top-right{
         float: left;
-        width: 45%;
+        width: 48%;
+        overflow: hidden;
         background: lavenderblush;
       }
+        .service-slide{
+          width: 2040px;
+          position: relative;
+          overflow: hidden;
+        }
+          .service-slide li{
+            float: left;
+          }
+            .service-slide-btn{
+              display: block;
+            }
+              .service-slide-btn img{
+                width: 100%;
+                display: block;
+              }
+
     .notice-inner-bot{
       width: 100%;
       background: pink;
     }
 
 
-
-.service-slide-btn img{
-  width: 100%;
-}
