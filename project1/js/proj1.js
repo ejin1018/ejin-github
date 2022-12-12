@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded',()=>{
   let utilLang = document.querySelector('.util-lang');
 
   utilBtns.forEach((utilBtn,index)=>{
-    utilBtn.addEventListener('click',()=>{
+    utilBtn.addEventListener('mouseenter',()=>{
       if(index == 3){
         utilBtn.style.background = '#222';
         utilBtn.style.color = '#fff';
