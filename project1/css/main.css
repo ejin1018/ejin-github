@@ -493,6 +493,24 @@ header,footer,[class*='-container']{
         margin-right: 5%;
         background: lavender;
       }
+        .notice-board{
+          background: lemonchiffon;
+        }
+          .notice-board-title{
+            width: 100%;
+            display: inline-block;
+            background: lavenderblush;
+          }
+            .not-tab-radio{
+              width: 90%;
+              background: lavender;
+              float: left;
+            }
+            .not-tab-plus{
+              width: 10%;
+              background: lavenderblush;
+              float: right;
+            }
       .not-top-right{
         float: left;
         width: 45%;
