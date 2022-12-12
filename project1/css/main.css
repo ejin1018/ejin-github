@@ -480,22 +480,16 @@ header,footer,[class*='-container']{
   }
   .notice-inner{
     width: 100%;
-    background: wheat;
   }
     .notice-inner-top{
       width: 100%;
       display: inline-block;
-      background: aliceblue;
     }
       .not-top-left{
         float: left;
         width: 50%;
         margin-right: 5%;
-        background: lavender;
       }
-        .notice-board{
-          background: lemonchiffon;
-        }
           .notice-board-title{
             width: 100%;
             display: inline-block;
@@ -504,6 +498,7 @@ header,footer,[class*='-container']{
             .not-tab-radio{
               width: 80%;
               float: left;
+              box-sizing: border-box;
             }
               .not-tab-radio input{
                 display: none;
@@ -513,18 +508,16 @@ header,footer,[class*='-container']{
                 float: left;
                 width: 25%;
                 padding: 15px 0;
-                font-size: 18px;
+                font-size: 23px;
                 text-align: center;
                 cursor: pointer;
                 color: #8e8e8e;
-                box-sizing: border-box;
               }
               .not-tab-radio input:checked + label{
                 color: #222;
                 font-weight: 700;
                 border-bottom: 4px solid #222;
               }
-
             .not-tab-plus{
               width: 28px;
               height: 28px;
@@ -536,6 +529,48 @@ header,footer,[class*='-container']{
               line-height: 28px;
               background: transparent;
             }
+          .notice-board-content{
+            position: relative;
+          }
+          .not-board-list{
+            list-style: disc;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-bottom: 1px solid #222;
+            padding-top: 20px;
+            background: #fff;
+          }
+            .not-board-list li{
+              margin: 0 0 25px 30px;
+            }
+              .board-link{
+                display: inline-block;
+                width: 100%;
+              }
+                .board-link p{
+                  float: left;
+                  font-size: 18px;
+                }
+                .board-post-title{
+                  width: 80%;
+                  font-weight: 500;
+                  color: #222;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                }
+                .board-post-title:hover{
+                  text-decoration: underline;
+                }
+                .board-post-date{
+                  width: 20%;
+                  font-weight: 300;
+                  color: #8e8e8e;
+                  text-align: center;
+                }
+
       .not-top-right{
         float: left;
         width: 45%;
