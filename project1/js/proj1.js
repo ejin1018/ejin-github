@@ -97,12 +97,12 @@ window.addEventListener('DOMContentLoaded',()=>{
   let liMargin = 60;
 
   ExhUl.style.width = (liWidth + liMargin) * liLength + 'px' ;
-
+  
   function ExhMove(num){
     ExhUl.style.left = - num * (liWidth + liMargin) + 'px';
     nowIndex = num;
   }
-
+  
   prev.addEventListener('click',()=>{
     if(nowIndex !== 0){
       ExhMove(nowIndex - 1);
