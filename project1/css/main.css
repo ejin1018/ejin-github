@@ -597,27 +597,10 @@ header,footer,[class*='-container']{
       width: 100%;
       margin-top: 80px;
       overflow: hidden;
-      background: pink;
     }
-    .not-bot-box{
-      float: left;
-    }
-    .not-bot-edu{
-      width: 26%;
-      margin-right: 3.5%;
-      background: wheat;
-      
-    }
-    .not-bot-event{
-      width: 20%;
-      margin-right: 3.5%;
-      background: lightblue;
-
-    }
-    .not-bot-online{
-      width: 47%;
-      background: wheat;
-    }
+      .not-bot-box{
+        float: left;
+      }
       .not-bot-title{
         margin-bottom: 35px;
         font-size: 30px;
@@ -631,11 +614,9 @@ header,footer,[class*='-container']{
         color: #222;
         letter-spacing: -1px;
       }
-      .musical-date{
-        margin-top: 20px;
-        font-size: 18px;
-        font-weight: 300;
-        color: #444;
+      .not-bot-edu{
+        width: 26%;
+        margin-right: 3.5%;
       }
         .not-edu-btn{
           display: block;
@@ -644,15 +625,54 @@ header,footer,[class*='-container']{
             display: block;
             width: 100%;
           }
-        
-        .online-exhibit-btn{
-          display: block;
+      .not-bot-event{
+        width: 20%;
+        margin-right: 3.5%;
+      }
+        .bot-event-slide{
           width: 100%;
-          background: #f5f5f5;
+          overflow: hidden;
         }
-          .online-exhibit-btn img{
-            display: block;
-            width: 100%;
+        .musical-slide{
+          position: relative;
+          width: 576px;
+          overflow: hidden;
+        }
+          .musical-slide li{
+            width: 50%;
+            float: left;
           }
+            .musical-date{
+              margin-top: 20px;
+              font-size: 18px;
+              font-weight: 300;
+              color: #444;
+            }
+      .not-bot-online{
+        width: 47%;
+      }
+        .online-exhibit-slide{
+          width: 100%;
+          overflow: hidden;
+        }
+          .online-exhibit-list{
+            width: 4739px;
+            overflow: hidden;
+          }
+            .online-exhibit-list li{
+              float: left;
+            }
+            .online-exhibit-btn{
+              display: block;
+              width: 100%;
+              background: #f5f5f5;
+            }
+              .online-exhibit-btn img{
+                display: block;
+                width: 100%;
+              }
+
+      
+        
 
 
