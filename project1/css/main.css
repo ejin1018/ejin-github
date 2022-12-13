@@ -736,3 +736,39 @@ header,footer,[class*='-container']{
             color: #222;
             margin-bottom: 15px;
           }
+/* footer */
+  footer:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .footer-left{
+    width: 50%;
+    float: left;
+    background: wheat;
+  }
+  .footer-left:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+      .system-inner{
+        width: 35%;
+        float: left;
+        background: pink;
+      }
+        .system-btn{
+          display: block;
+          margin-bottom: 20px;
+          font-size: 18px;
+          font-weight: 500;
+          color: #222;
+        }
+      .direct-inner{
+        float: left;
+      }
+    .footer-right{
+      width: 50%;
+      float: left;
+      background: aliceblue;
+    }
