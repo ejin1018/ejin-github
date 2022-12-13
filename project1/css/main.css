@@ -633,6 +633,9 @@ header,footer,[class*='-container']{
         color: #222;
         letter-spacing: -1px;
       }
+      .mkt-post-title:hover{
+        text-decoration: underline;
+      }
       .not-bot-edu{
         width: 26%;
         margin-right: 3.5%;
@@ -723,7 +726,7 @@ header,footer,[class*='-container']{
             color: #666;
             letter-spacing: -0.25px;
           }
-          .sitemap-mid-btn:hover{
+          .sitemap-mid-btn:hover, .sitemap-right-btn:hover{
             text-decoration: underline;
           }
           .sitemap-right-btn{
