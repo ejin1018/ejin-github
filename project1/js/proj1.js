@@ -1,6 +1,14 @@
 window.addEventListener('DOMContentLoaded',()=>{
   console.log('ready');
 
+  let topBtn = document.querySelector('.top-fix');
+  topBtn.addEventListener('click',()=>{
+    window.scrollTo({
+      top:0,
+      behavior: 'smooth'
+    });
+  })
+
   let utilBtns = document.querySelectorAll('.utility-btn');
   let utilArrow = document.querySelectorAll('.arrow-down');
   let utilSubs = document.querySelectorAll('.util-sub-list');
