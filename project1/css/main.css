@@ -215,7 +215,7 @@ header,footer,[class*='-container']{
 
     .gnb-mid-inner{
       position: absolute;
-      top: 87px;
+      top: 97px;
       left: 0;
       display: inline-block;
       width: 100%;
@@ -314,7 +314,7 @@ header,footer,[class*='-container']{
   .main-slider .main-exhibition .main-pagination{
     width: auto;
     left: inherit;
-    right: 55px;
+    right: 65px;
     bottom: 45px;
   }
   .main-slider .main-exhibition .main-pagination span{
@@ -336,7 +336,7 @@ header,footer,[class*='-container']{
     width: 35px;
     height: 35px;
     position: absolute;
-    right: 10px;
+    right: 20px;
     bottom: 43px;
     z-index: 10;
     border-radius: 0;
@@ -467,7 +467,33 @@ header,footer,[class*='-container']{
         }
           .nation-poster{
             display: block;
+            position: relative;
+            min-height: 470px;
           }
+          .poster-dim{
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            transition: all .4s;
+          }
+          .nation-poster:hover .poster-dim{
+            opacity: 1;
+          }
+            .dim-text{
+              width: 100%;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+              font-size: 28px;
+              font-weight: 500;
+              color: #fff;
+              text-align: center;
+            }
             .nation-poster img{
               display: block;
               width: 100%;
@@ -566,7 +592,7 @@ header,footer,[class*='-container']{
       .not-top-left{
         float: left;
         width: 48%;
-        margin-right: 4%;
+        margin-right: 5%;
       }
           .notice-board-title{
             width: 100%;
@@ -648,7 +674,7 @@ header,footer,[class*='-container']{
 
       .not-top-right{
         float: left;
-        width: 48%;
+        width: 47%;
         overflow: hidden;
         background: lavenderblush;
       }
@@ -694,7 +720,7 @@ header,footer,[class*='-container']{
       }
       .not-bot-edu{
         width: 26%;
-        margin-right: 3.5%;
+        margin-right: 4.5%;
       }
         .not-edu-btn{
           position: relative;
@@ -712,7 +738,7 @@ header,footer,[class*='-container']{
           }
       .not-bot-event{
         width: 20%;
-        margin-right: 3.5%;
+        margin-right: 4.5%;
       }
         .bot-event-slide{
           width: 100%;
@@ -734,7 +760,7 @@ header,footer,[class*='-container']{
               color: #444;
             }
       .not-bot-online{
-        width: 47%;
+        width: 45%;
       }
         .online-exhibit-slide{
           width: 100%;

@@ -1,10 +1,11 @@
 window.addEventListener('DOMContentLoaded',()=>{
   console.log('ready');
 
-  let topBtn = document.querySelector('.top-fix');
-  topBtn.addEventListener('click',()=>{
+  let goTopBtn = document.querySelector('.top-fix');
+  goTopBtn.addEventListener('click',()=>{
     window.scrollTo({
       top:0,
+      left:0,
       behavior: 'smooth'
     });
   })
@@ -117,7 +118,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     }
   });
   next.addEventListener('click',()=>{
-    if(nowIndex !== liLength - 1){
+    if(nowIndex !== liLength - 4){
       ExhMove(nowIndex + 1);
     }
   });
