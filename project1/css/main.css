@@ -722,7 +722,7 @@ header,footer,[class*='-container']{
           .sitemap-mid-btn{
             display: inline-block;
             font-size: 15px;
-            font-weight: 400;
+            font-weight: 300;
             color: #666;
             letter-spacing: -0.25px;
           }
@@ -743,32 +743,137 @@ header,footer,[class*='-container']{
     clear: both;
   }
   .footer-left{
-    width: 50%;
+    width: 45%;
     float: left;
+    display: flex;
+    justify-content: space-between;
     background: wheat;
   }
-  .footer-left:after{
+    .system-inner{
+      width: 35%;
+      background: pink;
+    }
+      .system-btn{
+        display: block;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #222;
+      }
+    .direct-inner{
+      width: 35%;
+    }
+      .direct-title{
+        position: relative;
+        background: rosybrown;
+      }
+        .direct-title > input[type="checkbox"]{
+          display: none;
+        }
+        .direct-title > label {
+          position: relative;
+          display: block;
+          padding: 8px 45px 8px 8px;
+          border-bottom: 2px solid #222;
+          font-weight: 400;
+          cursor: pointer;
+        }
+        .direct-title > input[type="checkbox"]:checked + label{
+          color: #fff;
+          background: #222;
+        }
+        .direct-title > label:after{
+          content: '';
+          position: absolute;
+          top: 13px;
+          right: 15px;
+          width: 10px;
+          height: 10px;
+          border-bottom: 1px solid #222;
+          border-right: 1px solid #222;
+          transform: rotate(45deg);
+          transition: all .4s;
+        }
+        .direct-title > input[type="checkbox"]:checked + label:after{
+          top: 18px;
+          transform: rotate(-135deg);
+          border-bottom: 1px solid #fff;
+          border-right: 1px solid #fff;
+        }
+        .direct-list{
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background: #222;
+          transition: all .4s;
+        }
+        .direct-title > input[type="checkbox"]:checked ~ .direct-list{
+          top: auto;
+          bottom: 100%;
+        }
+        .direct-list > li > a{
+          display: block;
+          padding: 8px 5px;
+          font-size: 14px;
+          font-weight: 300;
+          color: #fff;
+          text-align: center;
+        }
+        .direct-list > li > a:hover{
+          color: #FADA4E;
+          text-decoration: underline;
+        }
+    .footer-right{
+      width: 50%;
+      margin-left: 5%;
+      float: left;
+      background: aliceblue;
+    }
+    .footer-right:after{
       content: '';
       display: block;
       clear: both;
     }
-      .system-inner{
-        width: 35%;
+      .policy-inner{
         float: left;
-        background: pink;
       }
-        .system-btn{
-          display: block;
-          margin-bottom: 20px;
-          font-size: 18px;
-          font-weight: 500;
-          color: #222;
+          .policy-btn{
+            display: inline-block;
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-weight: 300;
+            color: #444;
+          }
+          .policy-btn:hover{
+            text-decoration: underline;
+          }
+          .personal{
+            font-weight: 700;
+            color: #222;
+          }
+      .alright-inner{
+        width: 50%;
+        float: right;
+      }
+        .footer-sns-list{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: wheat;
         }
-      .direct-inner{
-        float: left;
-      }
-    .footer-right{
-      width: 50%;
-      float: left;
-      background: aliceblue;
-    }
+          .footer-sns-btn{
+            display: block;
+            background: red;
+          }
+            .footer-sns-btn img{
+              display: inline-block;
+            }
+          .alright-info p, .alright-info a{
+            font-size: 14px;
+            color: #444;
+            text-align: right;
+          }
+          .alright-tel{
+            display: inline-block;
+          }
